@@ -5,21 +5,21 @@
 class Forgeseal < Formula
   desc "Supply chain security for JavaScript and TypeScript projects"
   homepage "https://github.com/sns45/forgeseal"
-  version "0.2.0"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sns45/forgeseal/releases/download/v0.2.0/forgeseal_0.2.0_darwin_amd64.tar.gz"
-      sha256 "b0c128f6ade7a00d1ad30fa0878cf894d09389f31bffa45d011b8856b5e8d597"
+      url "https://github.com/sns45/forgeseal/releases/download/v0.3.0/forgeseal_0.3.0_darwin_amd64.tar.gz"
+      sha256 "0739f756160f8480740d5c1b03a4800b76b53857e04193598508878ea4604bb2"
 
       define_method(:install) do
         bin.install "forgeseal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sns45/forgeseal/releases/download/v0.2.0/forgeseal_0.2.0_darwin_arm64.tar.gz"
-      sha256 "94c4631ff615fae2065209f195532e822ee880a6bba27704a627c0fc244c8990"
+      url "https://github.com/sns45/forgeseal/releases/download/v0.3.0/forgeseal_0.3.0_darwin_arm64.tar.gz"
+      sha256 "54e9f56b8558666fa5923f26be4e96b0ce2c6c164a4b8944fd6568af38ee7374"
 
       define_method(:install) do
         bin.install "forgeseal"
@@ -29,15 +29,15 @@ class Forgeseal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sns45/forgeseal/releases/download/v0.2.0/forgeseal_0.2.0_linux_amd64.tar.gz"
-      sha256 "6a9dbfa54764f61a2d5eee8682f90f48549ef1c13b3e3f8814e6daa33c3491ab"
+      url "https://github.com/sns45/forgeseal/releases/download/v0.3.0/forgeseal_0.3.0_linux_amd64.tar.gz"
+      sha256 "a1217cb78ccccf9c187bd14c8b092398b3c1e12563f5fec51ace15be70b82e59"
       define_method(:install) do
         bin.install "forgeseal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sns45/forgeseal/releases/download/v0.2.0/forgeseal_0.2.0_linux_arm64.tar.gz"
-      sha256 "6db805296f1266e671c387405229d5239a0c7cfdf1eb12b192b61f2a89cd5b95"
+      url "https://github.com/sns45/forgeseal/releases/download/v0.3.0/forgeseal_0.3.0_linux_arm64.tar.gz"
+      sha256 "0c00f0304515aec88f8ca9f3d8b2399828f234181917ad716e6b10a050525c75"
       define_method(:install) do
         bin.install "forgeseal"
       end
