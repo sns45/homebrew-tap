@@ -5,21 +5,21 @@
 class Assayward < Formula
   desc "Evaluate supply-chain evidence against a declarative policy"
   homepage "https://github.com/sns45/assayward"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sns45/assayward/releases/download/v0.1.0/assayward_darwin_amd64.tar.gz"
-      sha256 "68cfc5e354a7be434e16f24c6f3f92d559398d11b80245eda1134d77b6dafdef"
+      url "https://github.com/sns45/assayward/releases/download/v0.2.0/assayward_darwin_amd64.tar.gz"
+      sha256 "6b45b15444e112a5929130a7649fff19e675243728be086c97af55284b90360c"
 
       define_method(:install) do
         bin.install "assayward"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sns45/assayward/releases/download/v0.1.0/assayward_darwin_arm64.tar.gz"
-      sha256 "d25564ba59cadbd29219c7070e87ec396139826eb5950e0714cb77de5eb33261"
+      url "https://github.com/sns45/assayward/releases/download/v0.2.0/assayward_darwin_arm64.tar.gz"
+      sha256 "8cd070927c6c62f778046e1c33198709d9eaa22907b245bc989191a32166eebe"
 
       define_method(:install) do
         bin.install "assayward"
@@ -29,15 +29,15 @@ class Assayward < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sns45/assayward/releases/download/v0.1.0/assayward_linux_amd64.tar.gz"
-      sha256 "5493250a4d1b2eab28ddc93e01aa51cb83e4846fcfbfad4328f2443ea03dd65f"
+      url "https://github.com/sns45/assayward/releases/download/v0.2.0/assayward_linux_amd64.tar.gz"
+      sha256 "9b2d991a09c3dcb3c78fa460b067b43093bb67e3c991ba07b217135389d1bce9"
       define_method(:install) do
         bin.install "assayward"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sns45/assayward/releases/download/v0.1.0/assayward_linux_arm64.tar.gz"
-      sha256 "7ca04b1ca3fd51e5c83dad68aae92467c4cfdb10842a455a75557eb135cc3984"
+      url "https://github.com/sns45/assayward/releases/download/v0.2.0/assayward_linux_arm64.tar.gz"
+      sha256 "c33bbb8e15d0a0d2a597bf1d9c07d63bb36ef1445726040f8f5d7d3c6e940aff"
       define_method(:install) do
         bin.install "assayward"
       end
