@@ -4,22 +4,22 @@ cask "smithmark" do
 
   on_macos do
     on_intel do
-      sha256 "d28fc7b534f110267b557cd284177bad67522e2b6497f65d7f01a8e0521db09e"
+      sha256 "ed4fc7e802f16af51ac72ad62885fd1221f0586a31733c1d3eec8de41d924794"
       url "https://github.com/sns45/smithmark/releases/download/v#{version}/smithmark_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "62d41a69b7980a4b7bc15e448647c828ad1716d33ededfaaab02962a91763faf"
+      sha256 "74484482584469f65d1c5e32c2f3549bf928ee57b5225acca7737ec8286b481a"
       url "https://github.com/sns45/smithmark/releases/download/v#{version}/smithmark_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "f74c6c22b4dba3b16da166bde88593cac7938e61ccdd7feddd5a7348e642a399"
+      sha256 "9b6db078e8ff700647d49a4f89377b4df7e65a385f3f51c5a7b61e94e3626774"
       url "https://github.com/sns45/smithmark/releases/download/v#{version}/smithmark_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "f17e749721aa5f00df93236d12b8449fbc58af1583c8dbbf3ceb40d51950816c"
+      sha256 "75a5d8d021aa547b96e83d5e8c8dc5b64fc100df45f24836baac5bc1d38a1041"
       url "https://github.com/sns45/smithmark/releases/download/v#{version}/smithmark_#{version}_linux_arm64.tar.gz"
     end
   end
