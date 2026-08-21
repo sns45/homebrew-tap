@@ -5,23 +5,23 @@
 class Tickettok < Formula
   desc "Terminal Kanban dashboard for managing multiple Claude Code agents via tmux"
   homepage "https://github.com/sns45/tickettok-releases"
-  version "0.20.1"
+  version "0.21.0"
   license "Proprietary"
 
   depends_on "tmux"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sns45/tickettok-releases/releases/download/v0.20.1/tickettok_darwin_amd64.tar.gz"
-      sha256 "ad40f1c64d939c184d2bb5dd93486bdef6744fca5e7b2be68eea6b51e56dc125"
+      url "https://github.com/sns45/tickettok-releases/releases/download/v0.21.0/tickettok_darwin_amd64.tar.gz"
+      sha256 "47bbcda7050182b3a772a09f4d8042ad8866931b747b53e9d59064e8fb406d71"
 
       define_method(:install) do
         bin.install "tickettok"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sns45/tickettok-releases/releases/download/v0.20.1/tickettok_darwin_arm64.tar.gz"
-      sha256 "0e6a3afed0cfea065d728f3c0633e03779294b12245bec27d37fa84106919cec"
+      url "https://github.com/sns45/tickettok-releases/releases/download/v0.21.0/tickettok_darwin_arm64.tar.gz"
+      sha256 "7f22e058debf8d71ca7afea621637cae5c10f15dce2f55d85f90e10f89663461"
 
       define_method(:install) do
         bin.install "tickettok"
@@ -31,15 +31,15 @@ class Tickettok < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sns45/tickettok-releases/releases/download/v0.20.1/tickettok_linux_amd64.tar.gz"
-      sha256 "5049156a2f768e8a17d8980de953d1297596406e9b128fe3b49d2430fe204908"
+      url "https://github.com/sns45/tickettok-releases/releases/download/v0.21.0/tickettok_linux_amd64.tar.gz"
+      sha256 "2582eed01f751a532263cf89e3132936eb0d38ad8ca7a05f50ddf9b7e6fae6e3"
       define_method(:install) do
         bin.install "tickettok"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sns45/tickettok-releases/releases/download/v0.20.1/tickettok_linux_arm64.tar.gz"
-      sha256 "3738c8309c889617776b2ee38d56c2de3a1d8e38ca4b81ff2fb37e2266e9e2de"
+      url "https://github.com/sns45/tickettok-releases/releases/download/v0.21.0/tickettok_linux_arm64.tar.gz"
+      sha256 "0463b63cf719bec02d0e79cae9f8ea163b3e194372fdf7b62752762edf73a379"
       define_method(:install) do
         bin.install "tickettok"
       end
